@@ -6,6 +6,28 @@
   </listeners>
   <test thread-count="5" name="Test(failed)" verbose="0">
     <classes>
+      <class name="testCaseRepo.TC_003">
+        <methods>
+          <include name="closeDBConnection"/>
+          <include name="dbConnection"/>
+          <include name="logoutOperation"/>
+          <include name="LE_003"/>
+          <include name="loginOperation"/>
+          <include name="closeBrowser"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- testCaseRepo.TC_003 -->
+      <class name="testCaseRepo.TC_002">
+        <methods>
+          <include name="closeDBConnection"/>
+          <include name="dbConnection"/>
+          <include name="logoutOperation"/>
+          <include name="LE_002"/>
+          <include name="loginOperation"/>
+          <include name="closeBrowser"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- testCaseRepo.TC_002 -->
       <class name="testCaseRepo.TC_001Test">
         <methods>
           <include name="closeDBConnection"/>
@@ -13,6 +35,7 @@
           <include name="logoutOperation"/>
           <include name="LE_001"/>
           <include name="loginOperation"/>
+          <include name="demo"/>
           <include name="closeBrowser"/>
           <include name="launchBrowser"/>
         </methods>
